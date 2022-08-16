@@ -8,7 +8,6 @@
 #include <vector>
 
 int main(int argc, char* argv[]) {
-    //с тестами пока не вышло все, пока оставлю так, в командной строке можно ввести путь с картинкой
     //test1 - как нужно тестировать - пример командной строки внизу.
     // ./image_processor (path)\\(нужное имя bmp_24).bmp (path)\\result.bmp
     //path обязательно полный, начиная например с C:\\..
@@ -17,7 +16,6 @@ int main(int argc, char* argv[]) {
     InputOutput copy1;
     Image image1(copy1.Input(in_path));
     copy1.Create(out_path, image1);
-    //с require надеюсь завтра будут тесты
     //test2 - применение фильтров negative grayscale
     //negative
     Image image2(copy1.Input(in_path));
